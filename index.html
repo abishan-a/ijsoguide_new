@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>A Guide to the IJSO</title>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mobilenavigation.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="icon" href="./favicon.png" type="image/x-ico" />
+  <script src="https://kit.fontawesome.com/04bf603a0f.js" crossorigin="anonymous"></script>
+  <script src="/navigationimport.js" type="module"></script>
+
+</head>
+
+<body>
+
+  <canvas id="particleCanvas"></canvas>
+
+  <div id="newest" style="display: none;">
+    <p>Succes tuturor românilor la ONSJ din partea echipei "A Guide to the IJSO"!</p>
+    <p>Good luck to all Romanians at ONSJ from the "A Guide to the IJSO" team!</p>
+  </div>
+
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1><span class="gradient-text">Your Ultimate Guide to IJSO Preparation</span></h1>
+      <p class="hero-description">Comprehensive resources, theory, practice questions, mock tests, and mindset guides –
+        all crafted by former medalists to help you excel.</p>
+      <div class="hero-cta">
+        <a href="Start Learning/startlearning.html" class="cta-button primary">Start Preparing Now</a>
+        <a href="Account/sign-up.html" class="cta-button secondary">Join the Community</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <section id="about" class="reveal">
+    <div class="section-header">
+      <h2>About the IJSO Guide</h2>
+    </div>
+    <p class="about-description">
+      Created by talented students and former IJSO medalists, this guide aims to provide accessible, high-quality
+      resources for students preparing for the International Junior Science Olympiad. Our mission is to level the
+      playing field and help students worldwide excel in science competitions.
+    </p>
+  </section>
+
+  <section id="features" class="reveal">
+    <div class="section-header">
+      <h2>Explore Features</h2>
+    </div>
+    <div class="features-grid">
+      <!-- 1 -->
+      <div class="feature-card card-large reveal stagger-1" onclick="window.location.href='Theory/theory.html'">
+        <i class="fa-solid fa-book-open"></i>
+        <h3>Theory Content</h3>
+        <p>Comprehensive coverage of physics, chemistry, and biology topics in the IJSO syllabus.</p>
+      </div>
+      <!-- 2 -->
+      <div class="feature-card card-tall reveal stagger-2"
+        onclick="window.location.href='Practice Questions/practicequestions.html'">
+        <i class="fa-solid fa-pen-to-square"></i>
+        <h3>Practice Questions</h3>
+        <p>Targeted, topic-wise questions across all IJSO subjects—complete with hints and solutions.</p>
+      </div>
+      <!-- 3 -->
+      <div class="feature-card card-wide reveal stagger-3" onclick="window.location.href='Mock Tests/mocktests.html'">
+        <i class="fa-solid fa-vial"></i>
+        <h3>Mock Tests & Quizzes</h3>
+        <p>Practice with full-length, realistic mock exams with answers.</p>
+      </div>
+      <!-- 4 -->
+      <div class="feature-card reveal stagger-4"
+        onclick="window.location.href='National Selection Tests/selections.html'">
+        <i class="fa-solid fa-globe"></i>
+        <h3>National Junior Science Olympiad Papers</h3>
+        <p>Massive collection of national junior science olympiad papers of different countries.</p>
+      </div>
+      <!-- 5 -->
+      <div class="feature-card reveal stagger-5" onclick="window.location.href='Study Materials/studymaterials.html'">
+        <i class="fa-solid fa-file-pdf"></i>
+        <h3>Study Materials</h3>
+        <p>Top books, notes, and links for mastering all IJSO topics.</p>
+      </div>
+      <!-- 6 -->
+      <div class="feature-card card-wide reveal stagger-1" onclick="window.location.href='/commingsoon.html'">
+        <i class="fa-solid fa-lightbulb"></i>
+        <h3>Tips & Tricks</h3>
+        <p>Avoid frequent pitfalls and exam traps with this helpful guide.</p>
+      </div>
+      <!-- 7 -->
+      <div class="feature-card reveal stagger-2" onclick="window.location.href='/commingsoon.html'">
+        <i class="fa-solid fa-brain"></i>
+        <h3>Mindset & Motivation</h3>
+        <p>Learn from gold medalists how to think, work, and win.</p>
+      </div>
+      <!-- 8 -->
+      <div class="feature-card reveal stagger-3" onclick="window.location.href='/commingsoon.html'">
+        <i class="fa-solid fa-microscope"></i>
+        <h3>Lab Apparatus Guide</h3>
+        <p>Understand and recognize all key experimental tools in physics, chem, and bio.</p>
+      </div>
+      <!-- 9 -->
+      <div class="feature-card card-wide reveal stagger-1" onclick="window.location.href='/commingsoon.html'">
+        <i class="fa-solid fa-trophy"></i>
+        <h3>Success Stories</h3>
+        <p>Read inspiring journeys of students who triumphed at the IJSO and beyond.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section reveal">
+    <div class="contact-container">
+      <h2>Contact Us</h2>
+      <form class="contact-form" action="https://formsubmit.co/ijsoguide@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <input type="text" name="_honey" style="display:none">
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <div class="pre-footer" style="position: relative; z-index: 2;">
+    <div class="pre-footer-left">
+      <h3>A Guide to the IJSO</h3>
+      <p>Your ultimate resource for International Junior Science Olympiad preparation.</p>
+    </div>
+    <div class="pre-footer-right">
+      <h4>Connect With Us</h4>
+      <div class="pre-footer-icons">
+        <a href="https://www.instagram.com/ijsoguide/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer style="position: relative; z-index: 2;">
+    <p>&copy; 2025 A Guide to the IJSO. All rights reserved.</p>
+  </footer>
+
+  <script src="/glowingspots.js"></script>
+  <script>
+    /* Expiration for the "newest" element */
+    let startDate = new Date('2025-07-22T00:00:00Z')
+    let endDate = new Date('2025-07-23T00:00:00Z')
+    let current = new Date();
+    if (startDate < current && current < endDate) document.getElementById('newest').style.display = "flex"; 
+  </script>
+
+
+
+  <!-- ================== IJSO AI CHATBOT ================== -->
+  <div id="chatbot-container">
+    <!-- Chatbot Button -->
+    <div id="chatbot-tooltip">IJSOGUIDE AI</div>
+    <button id="chatbot-button" title="IJSOGUIDE AI">
+      <img src="favicon.png" alt="Chatbot Icon">
+    </button>
+
+    <!-- Chatbot Window -->
+    <div id="chatbot-window">
+      <div id="chatbot-header">
+        <span>IJSOGUIDE AI</span>
+        <div class="chatbot-controls">
+          <button id="open-full" title="Open Full Website">🌐</button>
+          <button id="close-chatbot" title="Close Chatbot">&times;</button>
+        </div>
+      </div>
+      <iframe id="chatbot-iframe" src="https://ijsoguide-web-ai.vercel.app/" title="IJSOGUIDE AI"></iframe>
+    </div>
+  </div>
+
+  <style>
+    /* ================== CHATBOT BUTTON ================== */
+    #chatbot-button {
+      position: fixed;
+      bottom: 20px;
+      right: 25px;
+      background: linear-gradient(135deg, #1e3a8a, #ec4899);
+      border: none;
+      border-radius: 50%;
+      width: 65px;
+      height: 65px;
+      cursor: pointer;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      touch-action: manipulation;
+    }
+
+    #chatbot-button:hover {
+      transform: scale(1.08);
+    }
+
+    #chatbot-button img {
+      width: 60%;
+      height: 60%;
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    /* ================== TOOLTIP ================== */
+    #chatbot-tooltip {
+      position: fixed;
+      bottom: 95px;
+      right: 35px;
+      background: rgba(15, 23, 42, 0.9);
+      color: #fff;
+      padding: 6px 10px;
+      border-radius: 6px;
+      font-size: 14px;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(5px);
+      transition: opacity 0.25s ease, transform 0.25s ease;
+      z-index: 9998;
+    }
+
+    #chatbot-button:hover+#chatbot-tooltip {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ================== CHATBOT WINDOW ================== */
+    #chatbot-window {
+      position: fixed;
+      bottom: 40px;
+      right: 25px;
+      width: 420px;
+      height: 650px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+      display: none;
+      flex-direction: column;
+      overflow: hidden;
+      z-index: 10000;
+      animation: fadeInUp 0.3s ease;
+      resize: both;
+      min-width: 360px;
+      min-height: 500px;
+      max-width: 480px;
+      max-height: 800px;
+      touch-action: none;
+    }
+
+    #chatbot-header {
+      background: linear-gradient(135deg, #1e3a8a, #ec4899);
+      color: #fff;
+      padding: 10px 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 600;
+      font-size: 16px;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+      user-select: none;
+    }
+
+    .chatbot-controls {
+      display: flex;
+      gap: 10px;
+    }
+
+    #chatbot-header button {
+      background: transparent;
+      border: none;
+      color: #fff;
+      font-size: 20px;
+      cursor: pointer;
+      transition: transform 0.2s ease, color 0.2s ease;
+    }
+
+    #chatbot-header button:hover {
+      color: #ffd6e0;
+      transform: scale(1.15);
+    }
+
+    #chatbot-iframe {
+      width: 100%;
+      height: calc(100% - 44px);
+      border: none;
+      pointer-events: auto;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* ================== MOBILE RESPONSIVE ================== */
+    @media (max-width: 768px) {
+      #chatbot-button {
+        width: 60px;
+        height: 60px;
+        bottom: 15px;
+        right: 15px;
+      }
+
+      #chatbot-tooltip {
+        display: none;
+      }
+
+      #chatbot-window {
+        width: 92%;
+        height: 95%;
+        bottom: 10px;
+        right: 50%;
+        transform: translateX(50%);
+        border-radius: 10px;
+        resize: none;
+      }
+
+      #chatbot-header {
+        border-radius: 10px 10px 0 0;
+      }
+
+      #chatbot-iframe {
+        pointer-events: all;
+        touch-action: auto;
+      }
+    }
+  </style>
+
+  <script>
+    const chatbotButton = document.getElementById('chatbot-button');
+    const chatbotWindow = document.getElementById('chatbot-window');
+    const closeChatbot = document.getElementById('close-chatbot');
+    const openFull = document.getElementById('open-full');
+
+    // Open chatbot
+    chatbotButton.addEventListener('click', (e) => {
+      e.stopPropagation();
+      chatbotWindow.style.display = 'flex';
+      chatbotButton.style.display = 'none';
+    });
+
+    // Close chatbot
+    closeChatbot.addEventListener('click', (e) => {
+      e.stopPropagation();
+      chatbotWindow.style.display = 'none';
+      chatbotButton.style.display = 'flex';
+    });
+
+    // Open full IJSOGUIDE AI website
+    openFull.addEventListener('click', (e) => {
+      e.stopPropagation();
+      window.open('https://ijsoguide-web-ai.vercel.app/', '_blank');
+    });
+
+    // Handle outside click (desktop only)
+    document.addEventListener('click', (e) => {
+      if (window.innerWidth > 768 &&
+        chatbotWindow.style.display === 'flex' &&
+        !chatbotWindow.contains(e.target) &&
+        !chatbotButton.contains(e.target)) {
+        chatbotWindow.style.display = 'none';
+        chatbotButton.style.display = 'flex';
+      }
+    });
+
+    // Ensure iframe touch works on mobile
+    window.addEventListener('touchstart', () => {
+      const iframe = document.getElementById('chatbot-iframe');
+      iframe.style.pointerEvents = 'auto';
+    });
+  </script>
+
+
+
+
+
+  <script>
+    // Intersection Observer for reveal animations
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          // Optional: stop observing once it's revealed
+          // revealObserver.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+  </script>
+</body>
+
+</html>
